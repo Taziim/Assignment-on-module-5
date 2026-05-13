@@ -16,9 +16,8 @@ The company wanted to automate the testing and build process to reduce manual ef
 - **Runner**: Self-hosted Runner
 - **Package Manager**: npm
 ## 📋 Submission Requirements (Fulfilled)
-- [x] Workflow YAML file (`.github/workflows/ci-cd.yml`)
+-Workflow YAML file 
 name: React App Pipeline
-
 on:
   push:
     branches:
@@ -34,15 +33,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-
       - name: Install dependencies
         run: npm install --force --legacy-peer-deps
-
   build:
     name: Build React App
     runs-on: self-hosted
@@ -50,24 +46,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Debug - list files
         run: |
           pwd
           ls -la
           cat package.json
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-
       - name: Install dependencies
         run: npm install --force --legacy-peer-deps
-
       - name: Build application
         run: npm run build
-
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
