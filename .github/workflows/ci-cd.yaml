@@ -27,7 +27,7 @@ jobs:
 
       # ── 3. Install project dependencies ─────────────────────────────────
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
       # ── 4. Run linter (catches code style errors early) ─────────────────
       - name: Run ESLint
