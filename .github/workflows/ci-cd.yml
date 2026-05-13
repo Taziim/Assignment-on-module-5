@@ -22,7 +22,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install --ignore-platform-checks
+        run: npm install
 
       - name: Run tests
         run: npm test
@@ -41,7 +41,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install --ignore-platform-checks
+        run: npm install 
 
       - name: Build application
         run: npm run build
