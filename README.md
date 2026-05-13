@@ -82,19 +82,15 @@ jobs:
           retention-days: 7
 ```
 # 📸 Submission Requirements (Completed)
-## ✅ Workflow YAML File
 Included above.
 ---
 ## ✅ Screenshot of Successful Pipeline Execution
 <img width="959" height="506" alt="success1" src="https://github.com/user-attachments/assets/921cf600-b845-4fc6-8f57-9ea0d8e4ec38" />
----
 ## ✅ Screenshot of Failed Pipeline Debugging
 <img width="941" height="422" alt="succssfullbuild" src="https://github.com/user-attachments/assets/319db75b-995a-4997-b5cb-0d0549ec8c9a" />
----
 ## ✅ Screenshot of Server Connection to GitHub Actions
 <img width="953" height="473" alt="githubactionsconf1" src="https://github.com/user-attachments/assets/c114a4cc-758f-4a02-8618-851198eaaa6d" />
 <img width="947" height="392" alt="githubactionsconf2" src="https://github.com/user-attachments/assets/b5cd4258-d62d-4383-af96-eefa12d1fd14" />
----
 # 🔄 CI/CD Pipeline Explanation
 ## 🚀 Workflow Trigger
 The workflow automatically runs when code is:
