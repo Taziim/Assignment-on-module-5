@@ -1,4 +1,4 @@
-name: React CI Pipeline
+name: React App Pipeline
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --force --legacy-peer-deps
 
       - name: Run tests
         run: npm test
@@ -41,7 +41,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install 
+        run: npm install --force --legacy-peer-deps
 
       - name: Build application
         run: npm run build
@@ -50,5 +50,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: react-build
-          path: react-project/dist/
+          path: dist/
           retention-days: 7
